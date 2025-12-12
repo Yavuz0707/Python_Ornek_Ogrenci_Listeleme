@@ -33,6 +33,13 @@ def menu_goster():
     print("6. Okul Not Ortalaması")
     print("7. Çıkış")
 
+def ogrencileri_dosyadan_yukle(dosya_yolu):
+    pass
+def ogrencileri_dosyaya_kaydet(dosya_yolu, ogrenciler):
+    # kullanıcı 7'ye basıp çıktığında kullanıcı o anda kaç öğrenci eklediyse onları text'e kayıt et.
+    with open(dosya_yolu,"w", encoding="utf-8") as dosya:
+        for ogrenci in ogrenciler.values():
+            dosya.write(f"{ogrenci.numara},{ogrenci.ad},{ogrenci.soyad},{ogrenci.ortalama}\n") # kullanıcının girdiği değerleri text'e kayıt et.
 
 def okul_ortalama_hesapla(ogrenciler):
     toplam = 0
@@ -50,7 +57,10 @@ def okul_ortalama_hesapla(ogrenciler):
 
 
 def main():
+   
+    dosya_yolu = "Öğrenci Bilgi Sistemi v1.0/veriler.txt"
     ogrenciler = {}
+
 
     while True:
         menu_goster()
@@ -101,6 +111,7 @@ def main():
             okul_ortalama_hesapla(ogrenciler)
 
         elif secim == "7":
+            ogrencileri_dosyaya_kaydet(dosya_yolu, ogrenciler)
             print("Çıkış yapılıyor...")
             break
 
