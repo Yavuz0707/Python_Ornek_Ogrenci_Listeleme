@@ -1,54 +1,96 @@
-Öğrenci Bilgi Sistemi v1.0
+# Öğrenci Bilgi Sistemi (v1.0)
 
-Bu proje Python ile geliştirilen temel bir öğrenci yönetim sistemidir
-Öğrencilerin eklenmesi silinmesi listelenmesi not girişlerinin yapılması ve okul genel not ortalamasının hesaplanması gibi işlemleri komut satırı üzerinden sağlar
-Kullanıcının hatalı giriş yapmasını engelleyen güvenli not kontrol mekanizması içerir
+Bu proje, Python kullanılarak geliştirilmiş **konsol tabanlı** bir Öğrenci Bilgi Sistemi uygulamasıdır. Uygulama, öğrenci bilgilerini dosya tabanlı olarak saklar ve temel öğrenci yönetim işlemlerini gerçekleştirmeyi sağlar.
 
-Özellikler
+---
 
-Yeni öğrenci ekleme
+## 📌 Proje Özeti
 
-Öğrenci silme
+Öğrenci Bilgi Sistemi; öğrenci ekleme, silme, not girme, öğrenci bilgilerini görüntüleme ve okul genel not ortalamasını hesaplama işlemlerini yapabilen basit ve anlaşılır bir uygulamadır. Girilen veriler `.txt` dosyasında saklanır ve program yeniden çalıştırıldığında otomatik olarak yüklenir.
 
-Öğrencileri listeleme
+---
 
-Sadece rakamsal not girişine izin veren güvenli not sistemi
+## ⚙️ Özellikler
 
-Tek öğrenci bilgisini gösterme
+* Öğrenci ekleme
+* Öğrenci silme
+* Tüm öğrencileri listeleme
+* Öğrenciye not girme (0–100 arası kontrol)
+* Tek öğrenci bilgisi görüntüleme
+* Okul genel not ortalaması hesaplama
+* Dosyadan veri okuma ve dosyaya veri kaydetme
+* Hatalı girişler için kullanıcı uyarıları
 
-Okul genel not ortalaması hesaplama
+---
 
-Menü tabanlı kullanım
+## 🗂️ Dosya Yapısı
 
-Kod Yapısı
-Ogrenci sınıfı
+```
+Öğrenci Bilgi Sistemi v1.0/
+│
+├── veriler.txt          # Öğrenci verilerinin tutulduğu dosya
+├── main.py              # Uygulamanın ana Python dosyası
+```
 
-Her öğrenci için numara ad soyad ve ortalama tutulur
-not_gir fonksiyonu sadece 0 ile 100 arası değer kabul eder
-bilgileri_goster fonksiyonu öğrencinin tüm bilgisini okunabilir biçimde döner
+---
 
-Menü yapısı
+## 🧱 Kullanılan Yapılar
 
-Kullanıcıya seçenekler sunulur
-Girilen seçime göre öğrenci ekleme silme listeleme veya not girme işlemleri yapılır
-Geçersiz seçimlerde uyarı verilir
+* **Sınıf (Class):** `Ogrenci`
+* **Dosya İşlemleri:** `open`, `readlines`, `write`
+* **Veri Yapısı:** Dictionary (öğrenciler numaraya göre tutulur)
+* **Hata Kontrolü:** `try-except`, koşul kontrolleri
 
-Ortalama hesaplama
+---
 
-Okul genel ortalaması sadece not girilmiş öğrenciler üzerinden hesaplanır
-Hiç not girilmemişse kullanıcı bilgilendirilir
+## ▶️ Uygulamanın Çalıştırılması
 
-Kullanım
+1. Bilgisayarınızda Python 3 yüklü olmalıdır.
+2. Proje klasörüne girin.
+3. Terminal veya komut satırında aşağıdaki komutu çalıştırın:
 
-proje py dosyasını çalıştırın
-konsolda çıkan menü üzerinden sayı girerek işlem seçin
-öğrenciler numaraya göre saklanır ve her işlem numara üzerinden yapılır
+```bash
+python main.py
+```
 
-Amaç
+---
 
-Python temel sınıf yapısı
-listeleme silme güncelleme mantığı
-kullanıcı girişi doğrulama
-döngü yönetimi
-sözlük yapısı kullanımı
-gibi konuları öğretmek amaçlanmıştır
+## 📋 Menü Seçenekleri
+
+```
+1. Öğrenci Ekle
+2. Öğrenci Sil
+3. Öğrencileri Listele
+4. Öğrenci Not Gir
+5. Öğrenci Bilgilerini Göster
+6. Okul Not Ortalaması
+7. Çıkış
+```
+
+---
+
+## 🛡️ Hata Kontrolleri
+
+* Aynı öğrenci numarası ile kayıt yapılamaz
+* Not girişi sadece sayısal ve 0–100 arası kabul edilir
+* Kayıtlı olmayan öğrenci için işlem yapılamaz
+* Dosya yoksa program hata vermeden çalışır
+
+---
+
+## 🧪 Geliştirme Amacı
+
+Bu proje, Python'da:
+
+* sınıf yapısını
+* dosya işlemlerini
+* fonksiyon kullanımını
+* kullanıcıdan veri almayı
+* hata kontrol mekanizmalarını
+  öğrenmek ve pekiştirmek amacıyla geliştirilmiştir.
+
+---
+
+## 📎 Not
+
+Bu proje eğitim amaçlıdır ve geliştirilmeye açıktır. İlerleyen sürümlerde dosya formatı, arayüz veya veritabanı desteği eklenebilir.
