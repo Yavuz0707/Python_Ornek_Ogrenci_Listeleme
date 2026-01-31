@@ -1,6 +1,6 @@
 # Öğrenci Bilgi Sistemi (v1.0)
 
-Bu proje, Python kullanılarak geliştirilmiş **konsol tabanlı** bir Öğrenci Bilgi Sistemi uygulamasıdır. Uygulama, öğrenci bilgilerini dosya tabanlı olarak saklar ve temel öğrenci yönetim işlemlerini gerçekleştirmeyi sağlar..
+Bu proje, Python kullanılarak geliştirilmiş **konsol tabanlı** bir Öğrenci Bilgi Sistemi uygulamasıdır. Uygulama, öğrenci bilgilerini dosya tabanlı olarak saklar ve temel öğrenci yönetim işlemlerini gerçekleştirmeyi sağlar.
 
 ---
 
