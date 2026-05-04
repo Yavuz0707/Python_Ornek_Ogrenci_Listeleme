@@ -6,7 +6,7 @@ Bu proje, Python kullanılarak geliştirilmiş **konsol tabanlı** bir Öğrenci
 
 ## 📌 Proje Özeti
 
-Öğrenci Bilgi Sistemi; öğrenci ekleme, silme, not girme, öğrenci bilgilerini görüntüleme ve okul genel not ortalamasını hesaplama işlemlerini yapabilen basit ve anlaşılır bir uygulamadır. Girilen veriler `.txt` dosyasında saklanır ve program yeniden çalıştırıldığında otomatik olarak yüklenir.
+Öğrenci Bilgi Sistemi; öğrenci ekleme, silme, not girme, öğrenci bilgilerini görüntüleme ve okul genel not ortalamasını hesaplama işlemlerini yapabilen basit ve anlaşılır bir uygulamadır. Girilen veriler `.txt` dosyasında saklanır ve program yeniden çalıştırıldığında otomatik olarak yüklenir./
 
 ---
 
